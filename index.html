@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title> Portfolio </title>
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+     <div class="container">
+        <div class="nav-warp">
+         <div class="left-side"> 
+             <div class="nav-link-warp active-nav-link">
+                     <a href="index.html">HOME</a>
+             </div>
+             <div class="nav-link-warp">
+                    <a href="about.html">ABOUT</a>
+             </div>
+         </div>
+              <div class="right-side"> 
+                   <div class="brand">
+                          <div> RISHABH RAJ </div>
+                    </div>
+             </div>    
+            </div>   
+           <div class="content-warp">
+               <div class="portfolio-items-warp">
+                   
+                        <div class="portfolio-item-warp">
+                            <div class = "portfolio-img-background" style="background-image:url(imafes/SHC_0023.JPG)" ></div>
+                            <div class="img-text-warp">
+                              <div class="logos-warp">
+                                  <img src="imafes/logo/quip.png" alt="">
+                              </div>  
+                              <div class="sub">
+                               i built this.   
+                              </div>
+
+                            </div>
+                         </div>
+                         <div class="portfolio-item-warp">
+                            <div class = "portfolio-img-background" style ="background-image:url(imafes/SHC_0024.JPG)" ></div>
+                            <div class="img-text-warp">
+                              <div class="logos-warp">
+                                  <img src="/imafes/logo/eventbrite.png" alt="">
+                              </div>  
+                              <div class="sub">
+                               lets code buddy.   
+                              </div>
+
+                            </div>
+                         </div>
+                         <div class="portfolio-item-warp">
+                            <div class = "portfolio-img-background" style ="background-image:url(imafes/SHC_0043.JPG)" ></div>
+                            <div class="img-text-warp">
+                              <div class="logos-warp">
+                                  <img src="imafes/logo/wb.png" alt"">
+                                  
+                              </div>  
+                              <div class="sub">
+                               we handle events ad we are connected   
+                              </div>
+
+                            </div>
+                         </div>
+                         <div class="portfolio-item-warp">
+                            <div class = "portfolio-img-background" style ="background-image:url(imafes/SHC_0044.JPG)" ></div>
+                            <div class="img-text-warp">
+                              <div class="logos-warp">
+                                  <img src="imafes/logo/te.png" alt="">
+                              </div>  
+                              <div class="sub">
+                                i know basic cloud computing. 
+                              </div>
+
+                            </div>
+                         </div>
+                         <div class="portfolio-item-warp">
+                            <div class = "portfolio-img-background" style ="background-image:url(imafes/SHC_0140.JPG)" ></div>
+                            <div class="img-text-warp">
+                              <div class="logos-warp">
+                                  <img src="imafes/logo/CC.png" alt="">
+                              </div>  
+                              <div class="sub">
+                               i built this.   
+                              </div>
+
+                            </div>
+                         </div>
+
+                    </div>
+                    
+           </div>
+            
+        </div> 
+    </body>
+    <script> 
+          const portfolioItems = document.querySelectorAll('.portfolio-item-warp')
+           
+             portfolioItems.forEach(portfolioItem => {
+             portfolioItem.addEventListener('mouseover', () =>{
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+             })
+            portfolioItem.addEventListener('mouseout', () => {
+                portfolioItem.childNodes[1].classList.remove('img-darken');
+             
+             })
+        })
+    
+    </script>
+</html>
